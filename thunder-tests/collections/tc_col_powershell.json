@@ -1,0 +1,34 @@
+{
+    "_id": "bfc6f2ce-9baf-4a63-83b4-c27b0978386b",
+    "colName": "PowerShell",
+    "created": "2023-07-24T18:27:41.796Z",
+    "sortNum": 10000,
+    "folders": [],
+    "requests": [
+        {
+            "_id": "50b371f1-8e95-4708-802d-d049b0ef41a5",
+            "colId": "bfc6f2ce-9baf-4a63-83b4-c27b0978386b",
+            "containerId": "",
+            "name": "PowerShellHTTP",
+            "url": "http://localhost/PS?param1=stop&param2=123",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2023-07-24T18:27:41.804Z",
+            "modified": "2023-07-24T18:29:58.742Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "param1",
+                    "value": "stop",
+                    "isPath": false
+                },
+                {
+                    "name": "param2",
+                    "value": "123",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        }
+    ]
+}

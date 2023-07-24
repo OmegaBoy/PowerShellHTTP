@@ -1,0 +1,41 @@
+[
+    {
+        "_id": "0b788c6a-2d47-42ef-bd9d-fa52782c405f",
+        "colId": "history",
+        "containerId": "",
+        "name": "http://localhost/PS",
+        "url": "http://localhost/PS",
+        "method": "GET",
+        "sortNum": 0,
+        "created": "2023-07-24T18:27:14.864Z",
+        "modified": "2023-07-24T18:27:14.864Z",
+        "headers": [],
+        "params": [],
+        "tests": []
+    },
+    {
+        "_id": "c192dec2-c17c-4234-9a6c-755d9c00a6d0",
+        "colId": "history",
+        "containerId": "",
+        "name": "http://localhost/PS?param1=test&param2=123",
+        "url": "http://localhost/PS?param1=test&param2=123",
+        "method": "GET",
+        "sortNum": 0,
+        "created": "2023-07-24T18:27:25.512Z",
+        "modified": "2023-07-24T18:27:25.512Z",
+        "headers": [],
+        "params": [
+            {
+                "name": "param1",
+                "value": "test",
+                "isPath": false
+            },
+            {
+                "name": "param2",
+                "value": "123",
+                "isPath": false
+            }
+        ],
+        "tests": []
+    }
+]

@@ -17,11 +17,11 @@ try {
         Write-Host "Param1=$param1"
         $param2 = $queryString.Get("param2")
         Write-Host "Param2=$param2"
-
+        
         # Perform your desired action here using the extracted parameters
         # For example, you can execute another script or launch an application.
         # You can access $param1 and $param2 to use the parameter values.
-
+        
         $response = $context.Response
         $responseString = "Request received successfully. Parameters: Param1=$param1, Param2=$param2"
         $buffer = [System.Text.Encoding]::UTF8.GetBytes($responseString)
@@ -29,6 +29,11 @@ try {
         $output = $response.OutputStream
         $output.Write($buffer, 0, $buffer.Length)
         $output.Close()
+
+        if ($param1 = "stop") {
+            Write-Host "Service stopped by client"
+            break
+        }
     }
 }
 catch {
