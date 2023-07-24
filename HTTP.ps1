@@ -10,11 +10,13 @@ try {
         $context = $listener.GetContext()
         $request = $context.Request
         Write-Host "HTTP request received from: $($request.RemoteEndPoint.Address)"
-
+        
         # Extract parameters from the URL
         $queryString = $request.QueryString
         $param1 = $queryString.Get("param1")
+        Write-Host "Param1=$param1"
         $param2 = $queryString.Get("param2")
+        Write-Host "Param2=$param2"
 
         # Perform your desired action here using the extracted parameters
         # For example, you can execute another script or launch an application.
