@@ -30,7 +30,7 @@ try {
         $output.Write($buffer, 0, $buffer.Length)
         $output.Close()
 
-        if ($param1 = "stop") {
+        if ($param1 -like "stop") {
             Write-Host "Service stopped by client"
             break
         }
